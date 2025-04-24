@@ -48,9 +48,9 @@
   
   .filter-buttons button.active,
   .filter-buttons button:hover {
-    background-color: #1a73e8;
+    background-color: #6ba3ec;
     color: white;
-    border-color: #1a73e8;
+    border-color: #4283da;
   }
   
   select,
