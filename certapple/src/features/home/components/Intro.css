@@ -1,0 +1,91 @@
+/* HomePage.css */
+
+/* General Section Styles */
+.hero {
+    /* background-color: #f0f4ff;  */
+    padding: 2rem;
+    position: relative;
+  }
+  
+  /* Hero Wrapper with background */
+  .heroWrapper {
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    padding: 4rem 1rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Heading Styles */
+  .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+  }
+  
+  /* Description Text Styles */
+  .description {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 8px;
+  }
+  
+  /* QR Code Box */
+  .qrBox {
+    position: absolute;
+    right: 2rem;
+    bottom: 0;
+    background-color: #0b57d0;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    width: 120px;
+    color: white;
+  }
+  
+  /* QR Code Image */
+  .qrImage {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Text under QR Code */
+  .qrText {
+    font-size: 0.85rem;
+    margin: 0;
+  }
+  
+  /* CertApple Logo Box */
+  .certappleLogoBox {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    padding: 10px;
+    border-radius: 50%;
+   
+  }
+  
+  /* CertApple Logo Image */
+  .certappleLogoImage {
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    /* Hide certain elements on mobile */
+    .description, .qrBox {
+      display: none; /* Hide content */
+    }
+  
+    /* Heading font size on mobile */
+    .heading {
+      font-size: 1.8rem;
+    }
+  }
+  

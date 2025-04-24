@@ -1,0 +1,158 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "title": "SALE UNBAN",
+        "type": "Apple cert",
+        "description": "8.33$",
+        "image": "/assets/imageproduct/certapplebasic.png",
+        "price": "265,000đ",
+        "salePrice": "125,000đ",
+        "marqueeText": "Chứng chỉ Apple với gói Unban...",
+        "marqueeColor": "#ffffff",
+        "marqueeBackground": "#8800ff",
+        "content": "Chứng chỉ Apple với gói Unban...",
+        "waitTime": "1 Phút",
+        "usageDuration": "1 Năm",
+        "warrantyTime": "10 Ngày",
+        "fileType": "P12 & MobileProvision",
+        "deviceSupport": "Không hỗ trợ đổi thiết bị",
+        "osSupport": "Hỗ trợ tất cả hệ điều hành",
+        "deviceVersion": "Hỗ trợ tất cả thiết bị Apple"
+      },
+      {
+        "id": 2,
+        "title": "JAILBREAK PREMIUM",
+        "type": "Jailbreak",
+        "description": "6.66$",
+        "image": "/assets/imageproduct/jailbreakpremium.png",
+        "price": "199,000đ",
+        "salePrice": "99,000đ",
+        "marqueeText": "Gói jailbreak cao cấp không lo văng...",
+        "marqueeColor": "#ffffff",
+        "marqueeBackground": "#ff4444",
+        "content": "Jailbreak iOS mọi thiết bị với độ ổn định cao.",
+        "waitTime": "2 Phút",
+        "usageDuration": "6 Tháng",
+        "warrantyTime": "7 Ngày",
+        "fileType": "TrollStore + Deb",
+        "deviceSupport": "Hỗ trợ đổi thiết bị 1 lần",
+        "osSupport": "Tối ưu cho iOS 14–17",
+        "deviceVersion": "iPhone 6s trở lên"
+      },
+      {
+        "id": 3,
+        "title": "APP DEV CERT",
+        "type": "App Dev",
+        "description": "12.00$",
+        "image": "/assets/imageproduct/appdevcert.png",
+        "price": "399,000đ",
+        "salePrice": "189,000đ",
+        "marqueeText": "Chứng chỉ Apple dùng cho phát triển ứng dụng...",
+        "marqueeColor": "#000000",
+        "marqueeBackground": "#ffcc00",
+        "content": "Gói chứng chỉ cấp phát ứng dụng iOS cá nhân (7 ngày, dev)",
+        "waitTime": "5 Phút",
+        "usageDuration": "1 Năm",
+        "warrantyTime": "15 Ngày",
+        "fileType": "P12, MobileProvision, SigningCert",
+        "deviceSupport": "Đăng ký UDID 5 thiết bị",
+        "osSupport": "Hỗ trợ từ iOS 12 trở lên",
+        "deviceVersion": "iPhone/iPad mọi đời"
+      },
+      {
+        "id": 4,
+        "title": "JAILBREAK BASIC",
+        "type": "Jailbreak",
+        "description": "4.99$",
+        "image": "/assets/imageproduct/jailbreakbasic.png",
+        "price": "149,000đ",
+        "salePrice": "79,000đ",
+        "marqueeText": "Jailbreak cơ bản dành cho thiết bị cũ...",
+        "marqueeColor": "#ffffff",
+        "marqueeBackground": "#0099ff",
+        "content": "Phù hợp với thiết bị cũ, hỗ trợ iOS 13 trở về trước.",
+        "waitTime": "1 Phút",
+        "usageDuration": "3 Tháng",
+        "warrantyTime": "5 Ngày",
+        "fileType": "AltStore",
+        "deviceSupport": "Không hỗ trợ đổi thiết bị",
+        "osSupport": "iOS 12–13",
+        "deviceVersion": "iPhone 6 đến iPhone X"
+      },
+      {
+        "id": 5,
+        "title": "CERT VIP",
+        "type": "Apple cert",
+        "description": "20.00$",
+        "image": "/assets/imageproduct/certvip.png",
+        "price": "599,000đ",
+        "salePrice": "299,000đ",
+        "marqueeText": "Chứng chỉ Apple VIP - cấp phát nhanh...",
+        "marqueeColor": "#ffffff",
+        "marqueeBackground": "#00c853",
+        "content": "Gói chứng chỉ Apple dùng cho cả nhóm thiết bị (10+)",
+        "waitTime": "30 Giây",
+        "usageDuration": "1 Năm",
+        "warrantyTime": "20 Ngày",
+        "fileType": "P12 & MobileProvision + QR",
+        "deviceSupport": "Hỗ trợ đổi thiết bị không giới hạn",
+        "osSupport": "iOS 11–17",
+        "deviceVersion": "Mọi dòng iPhone/iPad"
+      },
+      {
+        "id": 6,
+        "title": "DEV TOOLBOX PACK",
+        "type": "App Dev",
+        "description": "9.99$",
+        "image": "/assets/imageproduct/devtoolbox.png",
+        "price": "349,000đ",
+        "salePrice": "159,000đ",
+        "marqueeText": "Bộ công cụ dành cho dev build app dễ dàng...",
+        "marqueeColor": "#000",
+        "marqueeBackground": "#ffa500",
+        "content": "Tặng kèm bộ signing tool + template app cho iOS",
+        "waitTime": "3 Phút",
+        "usageDuration": "1 Năm",
+        "warrantyTime": "12 Ngày",
+        "fileType": "Xcode Project, Certificates",
+        "deviceSupport": "Không giới hạn thiết bị",
+        "osSupport": "Tất cả hệ điều hành Apple",
+        "deviceVersion": "iOS 13 trở lên"
+      }
+    ],
+
+    "blogs": [
+    {
+      "id": 1,
+      "title": "Cách chọn chứng chỉ Apple phù hợp năm 2025",
+      "summary": "Bạn đang bối rối khi chọn chứng chỉ Apple? Bài viết này sẽ giúp bạn hiểu rõ hơn...",
+      "image": "/assets/blogs/apple-cert-guide.png",
+      "content": "Nội dung chi tiết của bài viết về chứng chỉ Apple, cách lựa chọn gói phù hợp và các lưu ý quan trọng...",
+      "date": "2025-04-24"
+    },
+    {
+      "id": 2,
+      "title": "Sự khác biệt giữa Jailbreak cơ bản và cao cấp",
+      "summary": "Hiểu rõ khi nào bạn nên chọn Jailbreak basic, và khi nào nên nâng cấp lên premium.",
+      "image": "/assets/blogs/jailbreak-diff.png",
+      "content": "Nội dung chi tiết của bài viết về chứng chỉ Apple, cách lựa chọn gói phù hợp và các lưu ý quan trọng...",
+      "date": "2025-04-23"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@example.com",
+      "password": "123456",
+      "name": "Admin User"
+    },
+    {
+      "id": 2,
+      "email": "user@example.com",
+      "password": "abcdef",
+      "name": "Normal User"
+    }
+  ]
+  }
+  

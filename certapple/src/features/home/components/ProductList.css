@@ -1,0 +1,64 @@
+/* Bố cục lưới sản phẩm */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột */
+    gap: 24px;
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+  
+  /* Responsive cho tablet */
+  @media (max-width: 1024px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cột */
+    }
+  }
+  
+  /* Responsive cho mobile */
+  @media (max-width: 600px) {
+    .product-grid {
+      grid-template-columns: 1fr; /* 1 cột */
+    }
+  }
+  
+  /* Nhóm bộ lọc */
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .filter-buttons button {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .filter-buttons button.active,
+  .filter-buttons button:hover {
+    background-color: #1a73e8;
+    color: white;
+    border-color: #1a73e8;
+  }
+  
+  select,
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 250px;
+  }
+  
