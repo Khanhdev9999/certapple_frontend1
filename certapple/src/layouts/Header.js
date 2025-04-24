@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import logo from "../assets/header/logo1.png";
 import './Header.css';
 import { useAuth } from '../contexts/AuthContext'; // ✅ Dùng context
 
@@ -22,7 +21,8 @@ const Header = () => {
     <header>
       <div className="logo">
         <Link to="/">
-          <img src={logo} alt="Logo" className="logo-img" />
+          {/* ✅ Dùng ảnh từ thư mục public */}
+          <img src="/assets/header/logo1.png" alt="Logo" className="logo-img" />
         </Link>
       </div>
 

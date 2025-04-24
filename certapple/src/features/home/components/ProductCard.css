@@ -12,8 +12,10 @@
   }
   .product-image {
     width: 100%;
-    height: auto;
+    height: 200px; /* 📌 chỉnh theo chiều cao mong muốn */
     border-radius: 10px;
+    object-fit: cover; /* 🎯 Crop ảnh để lấp đầy khung */
+    object-position: center; /* ✅ Canh giữa ảnh khi crop */
   }
   .sale-price {
     color: #e53935;
