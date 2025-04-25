@@ -16,11 +16,18 @@ const ProductCard = ({ product, onSelect }) => {
 
       <img src={product.image} alt={product.title} className="product-image" />
 
-      <h3 className="product-title">Gói chứng chỉ: <span> {product.title}</span> </h3> 
+      <h2 className="modal-heading1">
+              Gói chứng chỉ: <span className="modal-title1">{product.title}</span>
+            </h2> 
         
 
-      <h6 className="product-title1">Thanh toán qua PayPal hoặc USDT:  {product.description}</h6>
       
+      
+      <p className="modal-subtitle">
+              Thanh toán qua PayPal hoặc USDT :  
+              <span className="modal-desc"> {product.description}</span>
+            </p>
+
       <div className="price-info">
         <p><span className="sale-price">{product.salePrice}</span> <s className="sale-price1">{product.price}</s> </p>
         

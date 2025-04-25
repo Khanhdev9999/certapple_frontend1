@@ -10,7 +10,7 @@
   .product-modal-content {
     background: #fff;
     padding: 30px;
-    max-width: 900px;
+    max-width: 800px;
     width: 95%;
     border-radius: 12px;
     position: relative;
@@ -38,6 +38,33 @@
   .modal-info {
     flex: 1;
   }
+
+  .modal-heading{
+    font-size: 2.0rem;
+  }
+
+  .modal-title {
+    font-size: 1.8rem;
+    color: #e58800;
+    font-weight: bold;
+}
+
+.modal-subtitle {
+  font-weight: 900;
+}
+
+.modal-desc {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  background: linear-gradient(120deg, #4065f6, #00d7a3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 4px;
+}
+
+
+
   .modal-info ul {
     padding-left: 0;
     list-style: none;
