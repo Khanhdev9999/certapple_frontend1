@@ -11,6 +11,17 @@ const ProductModal = ({ product, onClose }) => {
           <img src={product.image} alt={product.title} className="modal-image" />
           <div className="modal-info">
             <h2>{product.title}</h2>
+
+            <h2>{product.description}</h2>
+            <div
+        className="marquee"
+        style={{
+          backgroundColor: product.marqueeBackground,
+          color: product.marqueeColor,
+        }}
+      >
+        <marquee>{product.marqueeText}</marquee>
+      </div>
             <p>{product.content}</p>
             <p><strong>Giá gốc:</strong> <s>{product.price}</s></p>
             <p><strong>Giá KM:</strong> <span className="highlight">{product.salePrice}</span></p>

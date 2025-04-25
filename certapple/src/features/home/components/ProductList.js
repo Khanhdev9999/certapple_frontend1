@@ -50,7 +50,7 @@ const ProductList = () => {
             <div className="filter-group">
                 {/* Loại sản phẩm */}
                 <div className="filter-inline">
-                    <h1 className="filter-label">Lọc theo loại:</h1>
+                    {/* <h1 className="filter-label">Lọc theo loại:</h1> */}
                     <div className="filter-buttons">
                         {types.map((type) => (
                             <button
@@ -67,7 +67,7 @@ const ProductList = () => {
                 {/* NHÓM BỘ LỌC NGANG */}
                 <div className="filter-row">
                     {/* Danh mục sản phẩm */}
-                    <div className="filter-inline">
+                    {/* <div className="filter-inline">
                         <h2 className="filter-label">Danh mục:</h2>
                         <div className="filter-buttons">
                             {categories.map((cat) => (
@@ -80,7 +80,7 @@ const ProductList = () => {
                                 </button>
                             ))}
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* Khoảng giá */}
                     <div className="filter-inline">
@@ -111,12 +111,14 @@ const ProductList = () => {
             </div>
 
             {/* DANH SÁCH SẢN PHẨM */}
-            <div className="product-grid">
-                {filtered.map(product => (
-                    <ProductCard key={product.id} product={product} onSelect={setSelectedProduct} />
-                ))}
+            <h1 className="feature-heading">Khám phá các tính năng khác</h1>
+            <div className="product-grid-wrapper">
+                <div className="product-grid">
+                    {filtered.map(product => (
+                        <ProductCard key={product.id} product={product} onSelect={setSelectedProduct} />
+                    ))}
+                </div>
             </div>
-
             {/* MODAL CHI TIẾT */}
             {selectedProduct && (
                 <ProductModal product={selectedProduct} onClose={() => setSelectedProduct(null)} />

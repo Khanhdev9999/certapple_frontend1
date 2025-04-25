@@ -1,8 +1,16 @@
+/* Căn giữa phần danh sách sản phẩm */
+.product-grid-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
 /* Bố cục lưới sản phẩm */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 cột */
-    gap: 24px;
+    gap: 80px;
     margin-top: 30px;
     padding: 0 20px;
   }
@@ -91,6 +99,16 @@
     border-radius: 6px;
     border: 1px solid #ccc;
     font-size: 14px;
+  }
+
+
+  .feature-heading {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #202124;
   }
 
 

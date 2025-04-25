@@ -4,8 +4,7 @@ import './ProductCard.css';
 const ProductCard = ({ product, onSelect }) => {
   return (
     <div className="product-card">
-      {/* MARQUEE */}
-      <div
+      {/* <div
         className="marquee"
         style={{
           backgroundColor: product.marqueeBackground,
@@ -13,26 +12,23 @@ const ProductCard = ({ product, onSelect }) => {
         }}
       >
         <marquee>{product.marqueeText}</marquee>
-      </div>
+      </div> */}
 
       <img src={product.image} alt={product.title} className="product-image" />
-      <h3>{product.title}</h3>
-      <p className="product-content">{product.content}</p>
 
-      <p><strong>Giá gốc:</strong> <s>{product.price}</s></p>
-      <p><strong>Giá khuyến mãi:</strong> <span className="sale-price">{product.salePrice}</span></p>
+      <h3 className="product-title">Gói chứng chỉ: <span> {product.title}</span> </h3> 
+        
 
-      <ul className="product-specs">
-        <li><strong>Thời gian xử lý:</strong> {product.waitTime}</li>
-        <li><strong>Thời hạn:</strong> {product.usageDuration}</li>
-        <li><strong>Bảo hành:</strong> {product.warrantyTime}</li>
-        <li><strong>Loại file:</strong> {product.fileType}</li>
-        <li><strong>Thiết bị hỗ trợ:</strong> {product.deviceSupport}</li>
-        <li><strong>Hệ điều hành:</strong> {product.osSupport}</li>
-        <li><strong>Phiên bản:</strong> {product.deviceVersion}</li>
-      </ul>
+      <h6 className="product-title1">Thanh toán qua PayPal hoặc USDT:  {product.description}</h6>
+      
+      <div className="price-info">
+        <p><span className="sale-price">{product.salePrice}</span> <s className="sale-price1">{product.price}</s> </p>
+        
+      </div>
 
-      <button onClick={() => onSelect(product)}>Chi tiết</button>
+      <div className="detail-btn-wrapper">
+  <button className="detail-btn" onClick={() => onSelect(product)}>+</button>
+</div>
     </div>
   );
 };

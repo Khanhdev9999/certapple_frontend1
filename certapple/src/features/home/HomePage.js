@@ -9,8 +9,9 @@ const HomePage = () => (
   <div>
     <Intro />
     <ProductList />
-    <BlogSection />
+
     <FeatureGrid />
+    <BlogSection />
   </div>
 );
 

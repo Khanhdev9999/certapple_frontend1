@@ -1,40 +1,95 @@
 .product-card {
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    padding: 16px;
-    background: #fff;
-    width: 300px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
-  }
-  .product-card:hover {
-    transform: translateY(-4px);
-  }
-  .product-image {
-    width: 100%;
-    height: 200px; /* 📌 chỉnh theo chiều cao mong muốn */
-    border-radius: 10px;
-    object-fit: cover; /* 🎯 Crop ảnh để lấp đầy khung */
-    object-position: center; /* ✅ Canh giữa ảnh khi crop */
-  }
-  .sale-price {
-    color: #e53935;
-    font-weight: bold;
-  }
-  .marquee {
-    padding: 6px;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 8px;
-    margin-bottom: 8px;
-  }
-  .product-specs {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    font-size: 14px;
-  }
-  .product-specs li {
-    margin-bottom: 4px;
-  }
+  width: 355px;
+  height: 410px;
+  background-color: #edf2fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+.marquee {
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.product-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 8px 0;
+  color: #202124;
+  text-align: center;
+}
+
+.product-title1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 8px 0;
+  color: #15d569;
+  text-align: center;
+}
+
+.price-info {
+  font-size: 18px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.sale-price {
+  color: black;
+  font-weight: bold;
+}
+.sale-price1 {
+  color: red;
+  font-weight: bold;
+}
+
+/* 👇 Wrapper để căn phải nút chi tiết */
+.detail-btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+ 
+}
+
+.detail-btn {
+  background-color: #68a6f7;
+  color: white;
+  border: none;
+  border-radius: 50%; /* 👈 Bo tròn nút */
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
   
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.detail-btn:hover {
+  background-color: #4992e5;
+}
