@@ -14,7 +14,7 @@ const ProductModal = ({ product, onClose }) => {
               Gói chứng chỉ: <span className="modal-title">{product.title}</span>
             </h2>
             <p className="modal-subtitle">
-              Thanh toán qua PayPal hoặc USDT bằng: 
+              Thanh toán qua PayPal hoặc USDT bằng:
               <span className="modal-desc">{product.description}</span>
             </p>
 
@@ -28,29 +28,114 @@ const ProductModal = ({ product, onClose }) => {
               <marquee>{product.marqueeText}</marquee>
             </div>
 
-            <p>{product.content}</p>
-            <p><strong>Giá gốc:</strong> <s>{product.price}</s></p>
-            <p><strong>Giá KM:</strong> <span className="highlight">{product.salePrice}</span></p>
+            <p className="modal-p-content">{product.content}</p>
 
-            <ul>
-              <li><strong>Thời gian xử lý:</strong> {product.waitTime}</li>
-              <li><strong>Thời hạn:</strong> {product.usageDuration}</li>
-              <li><strong>Bảo hành:</strong> {product.warrantyTime}</li>
-              <li><strong>Loại file:</strong> {product.fileType}</li>
-              <li><strong>Thiết bị hỗ trợ:</strong> {product.deviceSupport}</li>
-              <li><strong>Hệ điều hành:</strong> {product.osSupport}</li>
-              <li><strong>Phiên bản:</strong> {product.deviceVersion}</li>
-            </ul>
+            {/* Thay thế phần ul/li bằng bảng */}
+            <table className="product-info-table">
+              <tbody>
+                <tr>
+                  <td><strong>Thời gian chờ:</strong></td>
+                  <td>{product.waitTime}</td>
+                </tr>
+                <tr>
+                  <td><strong>Thời hạn:</strong></td>
+                  <td>{product.usageDuration}</td>
+                </tr>
+                <tr>
+                  <td><strong>Bảo hành:</strong></td>
+                  <td>{product.warrantyTime}</td>
+                </tr>
+                <tr>
+                  <td><strong>File chứng chỉ:</strong></td>
+                  <td>{product.fileType}</td>
+                </tr>
+                <tr>
+                  <td><strong>Đổi thiết bị:</strong></td>
+                  <td>{product.deviceSupport}</td>
+                </tr>
+              </tbody>
+            </table>
+
+
+            <p className="modal-desc modal-support-title">Các danh mục phiên bản hỗ trợ</p>
+            <table className="product-info-table">
+              <tbody>
+
+                <tr>
+                  <td><strong>Phiên bản hệ điều hành:</strong></td>
+                  <td>{product.osSupport}</td>
+                </tr>
+                <tr>
+                  <td><strong>Phiên bản thiết bị:</strong></td>
+                  <td>{product.deviceVersion}</td>
+                </tr>
+                <tr>
+                  <td><strong>Hỗ trợ thanh toán:</strong></td>
+                  <td className="payment-icons">
+                    <div className="payment-icons">
+                      <img src="/assets/iconpayment/binance.png" alt="Binance" />
+                      <img src="/assets/iconpayment/paypal.png" alt="PayPal" />
+                      <img src="/assets/iconpayment/vietqr.png" alt="VietQR" />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colSpan="2" className="gradient-text1">
+                    <strong>Đối với thiết bị iPad bạn sẽ được "Miễn Phí" hoàn toàn</strong>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+
+            <div className="modal-bottom-row">
+              <div className="modal-price">
+                <p><strong>Giá gốc:</strong> <span>{product.salePrice}</span> <s className="highlight">{product.price}</s></p>
+              </div>
+              <div className="modal-social-icons">
+                {/* Chỉnh sửa và sử dụng các icon chia sẻ */}
+                <a href="https://t.me/CertApple_KT" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/iconpayment/telegram.png" alt="Telegram" />
+                </a>
+                <a href="https://www.facebook.com/ADKenhTao/" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/iconpayment/facebook.png" alt="Facebook" />
+                </a>
+                <a href="https://zalo.me/g/nhothm102" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/iconpayment/zalo.png" alt="Zalo" />
+                </a>
+                <a href="https://chat.whatsapp.com/KXqcHO2LZyD54goJtogsSL" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/iconpayment/whatsapp.png" alt="WhatsApp" />
+                </a>
+                <a href="https://www.youtube.com/@CertP12" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/iconpayment/youtube.png" alt="YouTube" />
+                </a>
+              </div>
+            </div>
 
             <div className="modal-actions">
               <button className="buy-now">Mua ngay</button>
               <button className="add-to-cart">Thêm vào giỏ</button>
             </div>
+
+
           </div>
 
           {/* Ảnh bên phải */}
-          <img src={product.image} alt={product.title} className="modal-image" />
+          <div className="modal-image-container">
+            <div className="modal-image-top">
+              <img src={product.image} alt={product.title} className="modal-image" />
+            </div>
+            <div className="modal-image-bottom">
+              <nav className="sliding-nav">
+                <button className="sliding-nav-item">Mua cho thiết bị này</button>
+                <button className="sliding-nav-item">Mua cho thiết bị khác</button>
+                <button className="sliding-nav-item">Mua thủ công</button>
+              </nav>
+            </div>
+
+          </div>
         </div>
+
       </div>
     </div>
   );

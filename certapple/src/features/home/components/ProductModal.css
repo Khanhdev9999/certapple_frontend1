@@ -1,101 +1,275 @@
 .product-modal-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
-  .product-modal-content {
-    background: #fff;
-    padding: 30px;
-    max-width: 800px;
-    width: 95%;
-    border-radius: 12px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 14px;
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  .product-modal-body {
-    display: flex;
-    gap: 24px;
-  }
-  .modal-image {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-  }
-  .modal-info {
-    flex: 1;
-  }
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
 
-  .modal-heading{
-    font-size: 2.0rem;
-  }
+.product-modal-content {
+  background: #fff;
+  padding: 20px;
+  max-width: 900px;
+  width: 90%;
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
 
-  .modal-title {
-    font-size: 1.8rem;
-    color: #e58800;
-    font-weight: bold;
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.product-modal-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.modal-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.modal-info {
+  flex: 1;
+  max-width: 420px;
+}
+
+.modal-heading {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.modal-title {
+  font-size: 1.6rem;
+  color: #e58800;
+  font-weight: bold;
 }
 
 .modal-subtitle {
   font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.modal-p-content{
+  font-size: 10px;
 }
 
 .modal-desc {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 1.2;
   background: linear-gradient(120deg, #4065f6, #00d7a3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+.gradient-text1 {
+background: linear-gradient(120deg, #4065f6, #00d7a3);
+background-size: 200% 200%;
+background-position:  50%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: 600;
+animation: colorAnimation 5s ease infinite;
+}
+
+.product-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.product-info-table th,
+.product-info-table td {
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+  border-bottom: 1px solid #eee;
+}
+
+.product-info-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  color: #0d0c0c;
+}
+
+.product-info-table td:first-child {
+  width: 45%;
+  font-weight: 600;
+  color: #0d0c0c;
+}
+
+.product-info-table thead {
+  background-color: #e3f2fd;
+}
+
+.product-info-table tr:nth-child(odd) {
+  background-color: #f0f8ff;
+}
+
+.product-info-table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.buy-now,
+.add-to-cart {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buy-now {
+  background-color: #ff5252;
+  color: #fff;
+}
+
+.add-to-cart {
+  background-color: #1a73e8;
+  color: #fff;
+}
+
+.highlight {
+  color: #e53935;
+  font-weight: bold;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.payment-icons img {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
 }
 
 
+.modal-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
 
-  .modal-info ul {
-    padding-left: 0;
-    list-style: none;
-    margin-top: 10px;
-  }
-  .modal-info li {
-    margin-bottom: 6px;
-  }
-  .modal-actions {
-    display: flex;
-    gap: 12px;
-    margin-top: 20px;
-  }
-  .buy-now,
-  .add-to-cart {
-    padding: 10px 20px;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  .buy-now {
-    background-color: #ff5252;
-    color: #fff;
-  }
-  .add-to-cart {
-    background-color: #1a73e8;
-    color: #fff;
-  }
-  .highlight {
-    color: #e53935;
-    font-weight: bold;
-  }
-  
+
+/* Social Icons */
+.modal-social-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.modal-social-icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.modal-social-icons img:hover {
+  transform: scale(1.1);
+}
+
+
+.modal-image-top {
+  width: 450px;
+  height: 400px;
+  background-color: #eee;
+  margin-top: 30px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.modal-image-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-image-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  width: 100%;
+}
+
+/* Container cho các nút */
+.sliding-nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Các nút item */
+.sliding-nav-item {
+  position: relative;
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  transition: color 0.3s ease; /* Khi đổi màu chữ */
+}
+
+.sliding-nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px; /* Độ dày của đường gạch dưới */
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.sliding-nav-item:hover::after {
+  background-color: #68a6f7; /* Màu sắc của đường gạch dưới khi hover */
+}
+
+.sliding-nav-item:nth-child(1):hover::after {
+  background-color: #1a73e8; /* Màu Xanh Dương */
+}
+
+.sliding-nav-item:nth-child(2):hover::after {
+  background-color: #ff5722; /* Màu Cam */
+}
+
+.sliding-nav-item:nth-child(3):hover::after {
+  background-color: #4caf50; /* Màu Xanh Lá */
+}
+
+.sliding-nav-item:hover {
+  color: #68a6f7; /* Màu chữ khi hover */
+}
+
+

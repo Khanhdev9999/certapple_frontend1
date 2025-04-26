@@ -1,6 +1,5 @@
 .product-card {
-  width: 355px;
-  height: 440px;
+  width: 350px;
   background-color: #edf2fa;
   border: 1px solid #e0e0e0;
   border-radius: 16px;
@@ -10,20 +9,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: auto;  /* Adjust height to adapt content */
+  overflow: hidden; /* Prevent content from overflowing */
 }
 
 .product-card:hover {
   transform: translateY(-6px);
-}
-
-.marquee {
-  width: 100%;
-  padding: 6px 10px;
-  font-size: 13px;
-  font-weight: bold;
-  border-radius: 8px;
-  margin-bottom: 12px;
-  text-align: center;
 }
 
 .product-image {
@@ -35,7 +26,7 @@
   margin-bottom: 12px;
 }
 
-.modal-heading1{
+.modal-heading1 {
   font-size: 1.5rem;
 }
 
@@ -44,9 +35,6 @@
   color: #e58800;
   font-weight: bold;
 }
-
-
-
 
 .modal-subtitle {
   font-size: 12;
@@ -73,29 +61,27 @@
   color: black;
   font-weight: bold;
 }
+
 .sale-price1 {
   color: red;
   font-weight: bold;
 }
 
-/* 👇 Wrapper để căn phải nút chi tiết */
 .detail-btn-wrapper {
   width: 100%;
   display: flex;
-  justify-content: end;
- 
+  justify-content: flex-end;
+  margin-top: auto; /* Pushes the button to the bottom */
 }
 
 .detail-btn {
   background-color: #68a6f7;
   color: white;
   border: none;
-  border-radius: 50%; /* 👈 Bo tròn nút */
+  border-radius: 50%; /* Make the button circular */
   width: 45px;
   height: 45px;
   font-size: 20px;
-  
-
   display: flex;
   align-items: center;
   justify-content: center;
