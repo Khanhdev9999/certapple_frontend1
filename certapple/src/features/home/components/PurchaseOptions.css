@@ -1,0 +1,47 @@
+.purchase-options {
+  padding: 20px;
+}
+
+.sliding-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.sliding-nav-item {
+  padding: 10px 20px;
+  background-color: #68a6f7;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sliding-nav-item:hover {
+  background-color: #4992e5;
+}
+
+
+
+.selected-option {
+  margin-top: 20px;
+}
+
+.device-option .qr-code {
+  width: 100px;
+  height: 100px;
+}
+
+.device-option .qr-text {
+  text-align: center;
+  font-weight: 400;
+  color: #333;
+}
+
+.other-device-option,
+.manual-option {
+  font-size: 16px;
+  color: #333;
+}
+
+

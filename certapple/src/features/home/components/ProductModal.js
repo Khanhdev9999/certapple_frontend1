@@ -1,5 +1,6 @@
 import React from 'react';
 import './ProductModal.css';
+import PurchaseOptions from './PurchaseOptions'; // Đảm bảo đúng đường dẫn
 
 const ProductModal = ({ product, onClose }) => {
   return (
@@ -56,11 +57,9 @@ const ProductModal = ({ product, onClose }) => {
               </tbody>
             </table>
 
-
             <p className="modal-desc modal-support-title">Các danh mục phiên bản hỗ trợ</p>
             <table className="product-info-table">
               <tbody>
-
                 <tr>
                   <td><strong>Phiên bản hệ điều hành:</strong></td>
                   <td>{product.osSupport}</td>
@@ -87,13 +86,11 @@ const ProductModal = ({ product, onClose }) => {
               </tbody>
             </table>
 
-
             <div className="modal-bottom-row">
               <div className="modal-price">
                 <p><strong>Giá gốc:</strong> <span>{product.salePrice}</span> <s className="highlight">{product.price}</s></p>
               </div>
               <div className="modal-social-icons">
-                {/* Chỉnh sửa và sử dụng các icon chia sẻ */}
                 <a href="https://t.me/CertApple_KT" target="_blank" rel="noopener noreferrer">
                   <img src="/assets/iconpayment/telegram.png" alt="Telegram" />
                 </a>
@@ -112,12 +109,10 @@ const ProductModal = ({ product, onClose }) => {
               </div>
             </div>
 
-            <div className="modal-actions">
+            {/* <div className="modal-actions">
               <button className="buy-now">Mua ngay</button>
               <button className="add-to-cart">Thêm vào giỏ</button>
-            </div>
-
-
+            </div> */}
           </div>
 
           {/* Ảnh bên phải */}
@@ -125,14 +120,10 @@ const ProductModal = ({ product, onClose }) => {
             <div className="modal-image-top">
               <img src={product.image} alt={product.title} className="modal-image" />
             </div>
+            {/* Thêm PurchaseOptions vào đây */}
             <div className="modal-image-bottom">
-              <nav className="sliding-nav">
-                <button className="sliding-nav-item">Mua cho thiết bị này</button>
-                <button className="sliding-nav-item">Mua cho thiết bị khác</button>
-                <button className="sliding-nav-item">Mua thủ công</button>
-              </nav>
+              <PurchaseOptions product={product} />
             </div>
-
           </div>
         </div>
 
