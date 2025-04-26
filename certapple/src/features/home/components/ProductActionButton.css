@@ -1,0 +1,38 @@
+.btn {
+    flex: 1;
+    min-width: 150px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #1d4ed8;
+    color: white;
+    transition: background 0.2s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn:hover {
+    background-color: #2563eb;
+  }
+  
+  .btn.green {
+    background-color: #059669;
+  }
+  
+  .btn.green:hover {
+    background-color: #047857;
+  }
+  
+  .btn.orange {
+    background-color: #f97316;
+  }
+  
+  .btn.orange:hover {
+    background-color: #ea580c;
+  }
+  
