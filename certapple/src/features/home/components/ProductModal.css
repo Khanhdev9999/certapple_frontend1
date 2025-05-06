@@ -45,18 +45,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.modal-text h2 {
-  font-size: 12px;
-  line-height: 0.6875rem;
-  color: #1f1f1f;
-  background-color: #d3e3fd;
-  border-radius: 4px;
-  font-weight: 700;
-  padding: 8px;
-  text-transform: uppercase;
-  width: fit-content;
-  margin: 0;
-}
+
 
 .modal-text h3 {
   font-weight: 500;
@@ -79,13 +68,6 @@
   margin: 0;
 }
 
-.modal-text h6 {
-  font-size: 14px;
-  font-weight: 500;
-  color: #3c4043;
-  line-height: 1.5;
-  margin: 0;
-}
 
 .modal-text li {
   margin-left: 0;
@@ -93,24 +75,17 @@
 }
 
 .modal-text li strong,
-.modal-text li b {
+.modal-text li  {
   font-weight: 600;
 }
 
-.modal-text li a {
+.modal-text li  {
   color: #1a73e8;
   text-decoration: none;
   font-weight: 500;
 }
 
-.note {
-  padding: 10px 14px;
-  border-radius: 8px;
-  font-style: italic;
-  font-size: 14px;
-  line-height: 1.5;
-  margin: 0;
-}
+
 
 /* BÊN PHẢI - Ảnh + Nút */
 .modal-side-content {

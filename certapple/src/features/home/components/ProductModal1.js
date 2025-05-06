@@ -16,47 +16,61 @@
           <div className="modal-body">
             {/* BÊN TRÁI */}
             <div className="modal-text">
-              <div className="label">{product.platform}</div>
-              <h3>{product.title}</h3>
-              <p>{product.description}</p>
+              <div className="label">PayPal hoặc USDT : {product.description}</div>
+              <h3>Gói chứng chỉ: {product.title}</h3>
+              <p>{product.content}</p>
 
-              <h4>iOS</h4>
+              <h4 className="modal-desc modal-support-title">Thông tin sản phẩm:</h4>
               <ol>
                 <li>
-                  Nhấn vào <b>Trình đơn Chrome</b>
-                  <i className="material-icons icon">more_horiz</i>
-                  <b>Trình quản lý mật khẩu</b>
-                  <i className="material-icons icon">vpn_key</i>.
+                Thời hạn: <strong>{product.usageDuration}</strong>
                 </li>
                 <li>
-                  Chọn mật khẩu bạn muốn chia sẻ, rồi nhấn vào <b>Chia sẻ</b>
-                  <i className="material-icons icon">share</i>.
+                Bảo hành: <strong>{product.warrantyTime}</strong>
                 </li>
                 <li>
-                  <span className="link">Chọn thành viên gia đình</span> để chia sẻ mật khẩu.
+                File chứng chỉ: <strong>{product.fileType}</strong>
                 </li>
+                <li>Đổi thiết bị: <strong>{product.deviceSupport}</strong></li>
               </ol>
 
-              <h4>Android</h4>
+              <h4 className="modal-desc modal-support-title">Các danh mục phiên bản hỗ trợ</h4>
               <ol>
-                <li>
-                  Nhấn vào <b>Trình đơn Chrome</b>
-                  <i className="material-icons icon">more_horiz</i>
-                  <i className="material-icons arrow">chevron_right</i>
-                  <b>Cài đặt</b>
-                  <i className="material-icons icon">settings</i>
-                  <i className="material-icons arrow">chevron_right</i>
-                  <b>Trình quản lý mật khẩu</b>.
-                </li>
-                <li>
-                  Trong phần <b>Tìm mật khẩu</b>, hãy chọn mật khẩu bạn muốn chia sẻ rồi nhấn vào
-                  <b>Chia sẻ</b> <i className="material-icons icon">share</i>.
-                </li>
-                <li>
-                  <span className="link">Chọn thành viên gia đình</span> để chia sẻ mật khẩu.
-                </li>
+              <li>Phiên bản hệ điều hành: <strong>{product.osSupport}</strong></li>
+              <li>Phiên bản thiết bị: <strong>{product.deviceVersion}</strong></li>
+              <li>Hỗ trợ thanh toán:
+                <div className="payment-icons">
+                  <div className="payment-icons">
+                    <img src="/assets/iconpayment/binance.png" alt="Binance" />
+                    <img src="/assets/iconpayment/paypal.png" alt="PayPal" />
+                    <img src="/assets/iconpayment/vietqr.png" alt="VietQR" />
+                  </div>
+                </div>
+              </li>
               </ol>
-              <p className="note">{product.note}</p>
+              <div className="modal-bottom-row">
+              <div className="modal-price">
+                <p><strong></strong> <span>{product.salePrice}</span> <s className="highlight">{product.price}</s></p>
+              </div>
+              <div className="modal-social-icons">
+                <a href="https://t.me/CertApple_KT" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/iconpayment/telegram.png" alt="Telegram" />
+                </a>
+                <a href="https://www.facebook.com/ADKenhTao/" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/iconpayment/facebook.png" alt="Facebook" />
+                </a>
+                <a href="https://zalo.me/g/nhothm102" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/iconpayment/zalo.png" alt="Zalo" />
+                </a>
+                <a href="https://chat.whatsapp.com/KXqcHO2LZyD54goJtogsSL" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/iconpayment/whatsapp.png" alt="WhatsApp" />
+                </a>
+                <a href="https://www.youtube.com/@CertP12" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/iconpayment/youtube.png" alt="YouTube" />
+                </a>
+              </div>
+            </div>
+             
             </div>
 
             {/* BÊN PHẢI */}
@@ -64,7 +78,7 @@
               <button className="modal-close" onClick={onClose}>×</button>
               <div className="modal-side-wrapper scrollable-content">
                 <div className="modal-image-container">
-                  <img src={product.image} alt={product.title} className="modal-image" />
+                <img src={product.image} alt={product.title} className="modal-image" />
                 </div>
 
                 {step === null && (
